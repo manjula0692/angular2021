@@ -1,0 +1,29 @@
+<app-button>button1</app-button>
+<app-button>button2</app-button>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of users'>
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td>
+        <button (click)="onBtnClick(user)">View Details</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="selectedUser">
+  <h2>Selected User Details</h2>
+  <h3>Name:{{selectedUser.name}}</h3>
+  <h3>Age:{{selectedUser.age}}</h3>
+</div>
+<div *ngIf="selectedUser">
+  
+</div>
