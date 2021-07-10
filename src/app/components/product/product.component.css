@@ -1,0 +1,15 @@
+.product-list{
+    display: flex;
+    
+}
+.product-list-item{
+    border:1px solid black;
+    margin:1rem;
+    padding: 1rem;
+    min-width: 12rem;
+}
+img{
+    max-height:150px;
+
+}
+

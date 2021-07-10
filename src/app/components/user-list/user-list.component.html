@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let user of users'>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>
+          <button (click)="onBtnClick(user)">View Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
